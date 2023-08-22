@@ -1,0 +1,818 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Roboto:wght@300;400&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    ---primary-color: #1A1A1A;
+    ---second-color: #ffff;
+    ---text-color: #ffff;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(---primary-color);
+}
+a{
+    text-decoration: none;
+    color: var(---text-color);
+}
+li{
+    list-style-type: none;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------
+==============================NAVBAR SHINING ELEMENT STARTED FRROM HERE============================================
+-------------------------------------------------------------------------------------------------------------------*/
+#nav_header{
+    background-color: black;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.nav_1{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+}
+.nav_2{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+
+}
+.nav_1::before,
+.nav_1::after {
+    content: "";
+    position: absolute;
+    top: 12vh;
+    left: 5%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(243, 239, 239, 0.911));
+}
+.nav_1::before {
+    left: 0;
+    transform: translateY(2px); 
+    background: linear-gradient(to left, transparent, rgba(189, 182, 182, 0));
+}
+.nav_2::before,
+.nav_2::after {
+    content: "";
+    position: absolute;
+    top: 12vh;
+    right: 5.1%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, rgba(243, 239, 239, 0.911));
+}
+.nav_2::before {
+    left: 0;
+    transform: translateY(2px);
+    background: linear-gradient(to right, transparent, rgba(189, 182, 182, 0));
+}
+
+
+/*---------------------------------------------------------------------------------------------------------
+=======================NAVBAR STYLING IS STARTED FROM HERE================================================*/
+#navbar{
+    background-color: var(---primary-color);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+}
+#logo_div{
+    width: 20%;
+    padding-left: 3.1vw;
+    cursor: none;
+}
+.logo_img{
+    height: 45px;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM sans', 'sans-serif';
+    width: 47%;
+    height: 7.7vh;
+}
+.menu_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    height: 100%;
+    padding-inline: 1vw;
+}
+.menu_items:hover{
+    border-bottom: 1.2px solid var(---second-color);
+}
+#Resources{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+#droparrow{
+    height: 3vh;
+    filter: invert(100%);
+}
+.cnt_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 7.7vh;
+    gap: 2vw;
+}
+.contact_link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'DM sans', sans-serif;
+    font-size: 1rem;
+    height: 100%;
+}
+.phone_icon{
+    height: 4vh;
+    background-color: var(---second-color);
+    padding: 4px;
+    border-radius: 50%;
+}
+.contact_link:hover{
+    border-bottom: 1.2px solid var(---second-color);
+}
+#toggle_btn{
+    width: 5vw;
+    height: 7.7vh;
+    display: none;
+}
+.Solid_bar{
+    height: 7vh;
+    filter: invert(100%);
+    border: 4px solid var(---primary-color);
+    padding: 3px 4px;
+    border-radius: 12%;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------
+============================= SECTION FIRST ( HOME SECTION ) CSS STYLING STARTED FROM HERE==========================
+------------------------------------------------------------------------------------------------------------------*/
+#home{
+    background-color: rgb(22, 22, 22);
+    height: 99.7vh;
+    width: 100%;
+}
+.container_large{
+    height: 100%;
+    width: 100%;
+}
+.content_container{
+    width: 100%;
+    height: 88%;
+    position: absolute;
+    top: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon_div_1,
+.icon_div_2{
+    height: 89%;
+    width: 17%;
+}
+.heading_div{
+    width: 66%;
+    height: 89%;
+    display: flex;
+    align-items: center;
+}
+.main_heading{
+    display: grid;
+    height: 75%;
+    padding-top: 3vh;
+}
+.heading{
+    font-size: 4.4rem;
+    text-align: center;
+    font-family: 'DM sans', 'sans-serif';
+    color: var(---text-color);
+}
+#power_div{
+    background-color: rgba(250, 235, 215, 0.295);
+    height: 100%;
+    width:  100%;
+    border-radius: 10px;
+    padding-inline: 1vw;
+}
+.para{
+    padding-inline: 10vw;
+    width: 100%;
+    height: 9vh;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'DM sans', 'sans-serif';
+    color: var(---text-color);
+    margin-top: -4vh;
+    line-height: 5vh;
+}
+.btn_div{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+#fancy_div{
+    width: 22%;
+    height: 100%;
+}
+.fancy_btn{
+    background-color: rgba(245, 96, 21, 0.973);
+    cursor: pointer;
+    border: 0;
+    height: 77%;
+    width: 14vw;
+    padding-inline: 1.2vw;
+    position: relative;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 4.2vh;
+    transition: 0.3s all ease-in;
+}
+.fancy_btn:hover{
+    margin-top: 4.1vh;
+}
+.fancy_btn::before{
+    content: "Let's cook a Website";
+    position: absolute;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 1rem rgba(26,26,26,.15);
+    width: 14vw;
+    bottom: 15%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 7vh;
+    z-index: 1;
+    transition: 0.3s all ease-in;
+    border-radius: 5px;
+    font-family: 'DM sans', 'sans-serif';
+
+}
+.fancy_btn:hover::before{
+    bottom: 15.5%;
+    right: 5.5%;
+}
+.nrml_btn{
+    border: 0;
+    width: 30%;
+    height: 80%;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(---text-color);
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    border-bottom: 1.5px solid var(---second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    transition: 0.3s all ease-in-out;
+    padding-inline: 0.1vw;
+    font-family: 'DM sans', 'sans-serif';
+    margin-top: 2vh;
+}
+.btn_right_arrow{
+    height: 45%;
+    filter: invert(100%);
+}
+.nrml_btn:hover{
+    gap: 0.9vw; 
+    height: 80%;
+    padding-inline: 0;  
+}
+.bottom_shine_div{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-end;
+    padding-right: 2vw;
+}
+.w_icon{
+    height: 1.8vh;
+}
+.bottom_btn{
+    width: 12.5%;
+    height: 5.5vh;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    font-weight: 700;
+    border: 1px solid rgb(240, 229, 229);
+    display: flex;
+    font-family: 'DM sans', 'sans-serif';
+    align-items: center;
+    gap: 5%;
+    padding-inline: 8px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------
+============================= SECTION SECOND ( BANDS SECTION ) CSS STYLING STARTED FROM HERE==========================
+------------------------------------------------------------------------------------------------------------------*/
+#brands{
+    height: 110vh;
+    width: 100%;
+}
+.trusted_div{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top_shine_1{
+    background-color:var(---primary-color);
+    width: 50%;
+    height: 10vh;
+}
+.top_shine_2{
+    background-color: var(---primary-color);
+    width: 50%;
+    height: 10vh;
+}
+.text_div{
+    width: 100%;
+    background-color: var(---primary-color);
+    height: 30vh;
+    padding: 1vh 2vw;
+    margin-bottom: 24vh;
+
+}
+.top_shine_1::before,
+.top_shine_1::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(243, 239, 239, 0.911));
+}
+.top_shine_1::before {
+    left: 0;
+    transform: translateY(2px); 
+    background: linear-gradient(to left, transparent, rgba(189, 182, 182, 0));
+}
+.top_shine_2::before,
+.top_shine_2::after {
+    content: "";
+    position: absolute;
+    right: 5.1%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, rgba(243, 239, 239, 0.911));
+}
+.top_shine_2::before {
+    left: 0;
+    transform: translateY(2px); 
+    background: linear-gradient(to right, transparent, rgba(189, 182, 182, 0));
+}
+.text_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#big_Text{
+    font-size: 7.8rem;
+    font-family: 'DM sans', 'sans-serif';
+    margin-top: 3vh;
+    color: transparent;
+    text-align: center;
+    letter-spacing: 0.4vw;
+    word-spacing: 1.5vw;
+    width: 100%;
+    font-weight: bold;
+    -webkit-text-stroke: 3px rgba(85, 84, 84, 0.5);
+}
+.heading_1{
+    text-align: center;
+    color: var(---text-color);
+    font-family: 'DM sans', 'sans-serif';
+    line-height: 1px;
+    width: 100%;
+    height: auto;
+    margin-top: -25vh;
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+.client_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50vh;
+    background-color: var(---primary-color);
+}
+.client_top_shine_A{
+    background-color:var(---primary-color);
+    width: 50%;
+    height: 4vh;
+}
+.client_top_shine_B{
+    background-color: var(---primary-color);
+    width: 50%;
+    height: 4vh;
+}
+.client_top_shine_A::before,
+.client_top_shine_A::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(243, 239, 239, 0.911));
+}
+.client_top_shine_A::before {
+    left: 0;
+    transform: translateY(2px); 
+    background: linear-gradient(to left, transparent, rgba(189, 182, 182, 0));
+}
+.client_top_shine_B::before,
+.client_top_shine_B::after {
+    content: "";
+    position: absolute;
+    right: 5.1%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, rgba(243, 239, 239, 0.911));
+}
+.client_top_shine_B::before {
+    left: 0;
+    transform: translateY(2px); 
+    background: linear-gradient(to right, transparent, rgba(189, 182, 182, 0));
+}
+.all_logo_div{
+    height: 46vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client_logo{
+    height: 75%;
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4vh;
+}
+.logo_img{
+    height: 10vh;
+}
+.brands_bottom_div{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;justify-content: center;
+    flex-wrap: wrap;
+}
+.brands_shine_A{
+    background-color:var(---primary-color);
+    width: 50%;
+    height: 4vh;
+}
+.brands_shine_B{
+    background-color: var(---primary-color);
+    width: 50%;
+    height: 4vh;
+}
+.brands_shine_A::before,
+.brands_shine_A::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(243, 239, 239, 0.911));
+}
+.brands_shine_A::before {
+    left: 0;
+    transform: translateY(2px); 
+    background: linear-gradient(to left, transparent, rgba(189, 182, 182, 0));
+}
+.brands_shine_B::before,
+.brands_shine_B::after {
+    content: "";
+    position: absolute;
+    right: 5.1%;
+    width: 45%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, rgba(243, 239, 239, 0.911));
+}
+.brands_shine_B::before {
+    left: 0;
+    transform: translateY(2px); 
+    background: linear-gradient(to right, transparent, rgba(189, 182, 182, 0));
+}
+.bottom_text{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+}
+.heading_2{
+    width: 70%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(---text-color);
+    font-family: 'DM sans', 'sans-serif';
+    gap: 1vw;
+}
+
+
+
+
+ 
+
+
+
+/*==================1023px screen styling-==================== */
+@media(max-width:1023px){
+    .nav_menu{
+        display: none;
+    }
+    #logo_div{
+        width:30%
+    }
+    .cnt_div{
+        justify-content: flex-end;
+        width: 68%;
+    }
+    #toggle_btn{
+        display: block;
+    }
+    .icon_div_1,
+    .icon_div_2{
+        width: 4%;
+    }
+    .heading_div{
+        width: 82%;
+    }
+    .heading{
+        width: 100%;
+        font-size: 3rem;
+    }
+    .para{
+        font-size: 1rem;
+        padding-inline: 12vw;
+    }
+    .btn_div{
+        gap: 8vw;
+    }
+    .fancy_btn{
+        width: 20vw;
+    }
+    .fancy_btn::before{
+        width: 20vw;
+        font-size: 0.8rem;
+    }
+    .nrml_btn{
+        font-style: 0.77rem;
+        font-weight: 500;
+        width: 28%;
+    }
+    .bottom_btn{
+        width: 16%;
+        gap: 4%;
+        font-size: 70%;
+    }
+    #big_Text{
+        font-size: 6.6rem;
+    }
+    .heading_1{
+        font-size: 2.2rem;
+    }
+    .client_logo{
+        width: 87%;
+    }
+    .logo_img{
+        height: 9vh;
+    }
+    .heading_2{
+        width: 80%;
+        gap: 10px;
+    }
+}
+
+/*==================768px screen styling-==================== */
+@media(max-width:768px){
+    .contact_link{
+        width: 5%;
+        visibility: hidden;
+    }
+    .cnt_div{
+        width: 65%;
+    }
+    .heading{
+        font-size: 270%;
+        height: 100%;
+    }
+    .para{
+        font-size: 90%;
+        padding-inline: 1vw;
+        line-height: 4.3vh;
+    }
+    .btn_div{
+        gap: 25%;
+    }
+    .fancy_btn{
+        width: 140%;
+    }
+    .fancy_btn::before{
+        width: 100%;
+    }
+    .nrml_btn{
+        width: 32%;
+        font-size: 80%;
+        font-weight: 600;
+    }
+    .bottom_shine_div{
+        height: 8%;
+    }
+    .bottom_btn{
+        width: 20%;
+    }
+    #big_Text{
+        font-size: 5rem;
+    }
+    .heading_1{
+        font-size: 1.6rem;
+    }
+    .trusted_div{
+        height: 35vh;
+    }
+    .client_div{
+        height: 60vh;
+    }
+    .logo_img{
+        height: 7.6vh;
+    }
+    .heading_2{
+        font-size: 85%;
+        width: 90%;
+    }
+}  
+
+/*==================540px screen styling-==================== */
+@media(max-width:540px){
+    .cnt_div{
+        width: 62.5%;
+    }
+    #home{
+        height: 108.7vh;
+    }
+    .heading{
+        font-size: 250%;
+    }
+    .para{
+        width: 100%;
+        padding: 0;
+        font-weight: 600;
+        margin-top: 1.5vh;
+        line-height: 3.4vh;
+    }
+    .btn_div{
+        flex-wrap: wrap;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 18vh;
+        gap:0;
+        margin-top: 2vh;
+    }
+    #fancy_div{
+        height: 40%;
+        width: 55%;
+    }
+    .fancy_btn{
+        width: 100%;
+        height: 7vh;
+    }
+    .fancy_btn::before{
+        font-size: 1rem;
+    }
+    .nrml_btn{
+        width: 55%;
+        height: 7vh;
+        margin-top: 8vh;
+        font-size: 1rem;
+    }
+    .bottom_shine_div{
+        margin-top: 10vh;
+    }
+    .bottom_btn{
+        width: 25%;
+    }
+    #big_Text{
+        font-size: 4rem;
+    }
+    .heading_1{
+        font-size: 1.3rem;
+    }
+    .client_top_shine_A, .client_top_shine_B{
+        height: 0.3vh;
+    }
+    .client_logo{
+        height: 100%;
+    }
+    .heading_2{
+        width: 90%;
+        font-size: 90%;
+        position: relative;
+    }
+    .heading_2 > img{
+        position: absolute;
+        top: 5vh;
+    }
+}
+
+/*==================400px screen styling-==================== */
+@media(max-width:400px){
+    .btn_div{
+        margin-top: 3.5vh;
+    }
+    .fancy_btn::before{
+        font-size: 0.79rem;
+    }
+    .nrml_btn{
+        font-size: 0.79rem;
+    }
+    #big_Text{
+        font-size: 3.1rem;
+    }
+    .heading_1{
+        font-size: 1rem;
+    }
+    .bottom_btn{
+        gap: 3vw;
+        overflow: hidden;
+        width: 11vw;
+        margin-top: 3vh;
+        opacity: 0.5;
+    }
+    .w_icon{
+        height: 3vh;
+    }
+    .trusted_div{
+        height: 25vh;
+    }
+    .top_shine_1, .top_shine_2{
+        height: 3vh;
+    }
+    .client_div{
+        height: 70vh;
+    }
+    .client_top_shine_A,.client_top_shine_B{
+        height: 1vh;
+    }
+    .all_logo_div{
+        height: 60vh;
+    }
+    .heading_2{
+        font-size: 0.7rem;
+    }
+}
